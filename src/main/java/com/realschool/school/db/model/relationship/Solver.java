@@ -3,10 +3,12 @@ package com.realschool.school.db.model.relationship;
 import com.realschool.school.db.model.Person;
 import com.realschool.school.db.model.Task;
 import jakarta.persistence.*;
+import lombok.Builder;
 
 import java.util.Objects;
 
 @Entity
+@Builder
 public class Solver {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

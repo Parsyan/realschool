@@ -1,32 +1,33 @@
 package com.realschool.school.db.model;
 
+import com.realschool.school.db.model.relationship.Solver;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 
+import java.util.List;
 import java.util.Objects;
 
 @Entity
+@Builder
+@AllArgsConstructor
+
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "email", unique = true)
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
 
     private String name;
     private String surname;
     private int age;
 
+    @OneToMany
+    @MapsId("solver")
+    private List<Solver> forSolverTaskList;
 
-
-//
-    public Person(Long id, String email, String name, String surname, int age) {
-        this.id = id;
-        this.email = email;
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-    }
 
     public Person() {
     }
