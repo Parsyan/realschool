@@ -1,0 +1,34 @@
+@author Parsyan
+(In github)
+
+# realschool
+The website for The Baghakats Education Center(earlier Real School Goris and use the same educations system.)
+
+## The Idea
+
+### The Situation
+
+Earlier the school uses Real School Ijevan's made website for collecting and checking schools and students work and for showing in public Real School's achivements.
+
+(The RеalSchool firstly has open in Gyumri and now it's main building's in Erevan. And altough it the RealSchool organization has branch offices in Goris, Ijevan, Vanadzor, and Stepanakert. But cause of one accident now every RealSchool is seperated organization and not all keep connection with main building.)
+
+Now if it's website won't work in future we want to have plan B or it can be method for reduce the load on the Ijevan's application.
+
+### The Website Idea
+
+It will have same functionality:
+- keeping student works by saving files(any type),
+Except:
+- schools works seperately checking, cause we aren't control several branch offices.
+- connection permission by certificate for adding data.
+
+
+The website will:
+- register Teachers and Students as User with permissions controlling.
+- register Tasks and setting tasks solvers.
+- It will register files(also any types) as Task's part.
+  
+And website will be in 2 parts program: front and back.
+
+For first I will made a backend part of website cause it my base specialization.
+On Second step front. 
